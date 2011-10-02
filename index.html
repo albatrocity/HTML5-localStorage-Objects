@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
+</head>
+<body>
+  <div class="container" style="padding: 40px 0;">
+    <div class="page-header"><h1>Guitars!</h1></div>
+    <form id="guitar_form">
+      <fieldset>
+        <legend>Add some</legend>
+        <div class="clearfix">
+          <label for="Year">Year</label>
+          <div class="input">
+            <input id="year" name="Year" type="text">
+          </div>
+        </div><!-- /clearfix -->        
+        <div class="clearfix">
+          <label for="Make">Make</label>
+          <div class="input">
+            <input id="make" name="Make" type="text">
+          </div>
+        </div><!-- /clearfix -->
+        <div class="clearfix">
+          <label for="Model">Model</label>
+          <div class="input">
+            <input id="model" name="Model" type="text">
+          </div>
+        </div><!-- /clearfix -->
+        <div class="clearfix">
+          <label for="pickupConfig">Select</label>
+          <div class="input">
+            <select class="medium" name="pickupConfig" id="pickupConfig">
+              <option>S</option>
+              <option>S-S</option>
+              <option>S-S-S</option>
+              <option>H</option>
+              <option>H-H</option>
+              <option>H-S</option>
+              <option>H-H-H</option>
+              <option>H-S-S-H</option>
+              <option>H-H-S</option>
+              <option>H-H</option>
+              <option>S-H-S</option>
+              <option>S-H</option>
+              <option>H-S</option>
+              <option>H-S-S</option>
+            </select>
+          </div>
+        </div><!-- /clearfix -->
+        <div class="actions">
+          <input type="submit" class="btn primary" value="Submit">&nbsp;<button type="reset" class="btn">Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+    
+    <h2>Guitar Collection</h2>
+    <ul id="guitars">
+    </ul>
+       
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="form.js"></script>
+</body>
+</html>
